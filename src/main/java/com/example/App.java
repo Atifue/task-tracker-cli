@@ -42,7 +42,7 @@ public class App{
             Type taskListType = new TypeToken<ArrayList<Task>>() {}.getType();
             ArrayList<Task> list = gson.fromJson(reader, taskListType);
     
-            if (list == null) return new ArrayList<>(); // ✅ key fix here
+            if (list == null) return new ArrayList<>(); 
             return list;
     
         } catch (Exception e) {
